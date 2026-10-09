@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukti Kehadiran</title>
+</head>
+<body>
+    <form action="prosesformulir.php" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="kehadiran">Kehadiran:</label>
+        <select id="kehadiran" name="kehadiran" required>
+            <option value="">Pilih Kehadiran</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+        </select><br><br>
+        <input type="checkbox" id="pagi" name="sesi[]" value="Pagi">
+        <label for="pagi">Sesi Pagi</label><br>
+        <input type="checkbox" id="siang" name="sesi[]" value="Siang">
+        <label for="siang">Sesi Siang</label><br>
+        <input type="checkbox" id="sore" name="sesi[]" value="Sore">
+        <label for="sore">Sesi Sore</label><br><br>
+        <label for="catatan">Catatan:</label><br>
+        <textarea id="catatan" name="catatan" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Kirim">
+</body>
+</html>
